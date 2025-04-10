@@ -53,8 +53,29 @@
             </div>
             <a href="#">Start a project</a>
         </div>
-        <div class="banner-img"><img src="assets/media/bannerimg.png" alt=""></div>
+        <div class="slider">
+            <div class="slide active"><img src="assets/media/bannerimg.png" alt=""></div>
+            <div class="slide"><img src="assets/media/dash.png" alt=""></div>
+        </div>
     </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide')
+        let currentIndex = 0
+
+        function switchSlides() {
+            slides[currentIndex].classList.remove('active')
+
+            currentIndex++
+            if (currentIndex >= slides.length) {
+                currentIndex = 0
+            }
+
+            slides[currentIndex].classList.add('active')
+        }
+
+        setInterval(switchSlides, 1000)
+    </script>
 
     <!-- adv -->
     <div class="adv-content container">
@@ -135,97 +156,111 @@
         <div class="name-acc">
             <h2>Integrates natively <br>with Supabase Auth</h2>
         </div>
-       <div class="accordeon-content">
-         <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
-        <div class="panel">
-            <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.Storage Authorization is built around Postgres
-                so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
-                policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.</p>
-                <div class="btn-acc"><p>↗ Expore documentation</p></div>
-        </div>
+        <div class="accordeon-content">
+            <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
+            <div class="panel">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.Storage Authorization is built around
+                    Postgres
+                    so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
+                    policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.</p>
+                <div class="btn-acc">
+                    <p>↗ Expore documentation</p>
+                </div>
+            </div>
 
-        <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
-        <div class="panel">
-            <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.Storage Authorization is built around Postgres
-                so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
-                policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.</p>
-                <div class="btn-acc"><p>↗ Expore documentation</p></div>
-        </div>
+            <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
+            <div class="panel">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.Storage Authorization is built around
+                    Postgres
+                    so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
+                    policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.</p>
+                <div class="btn-acc">
+                    <p>↗ Expore documentation</p>
+                </div>
+            </div>
 
-        <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
-        <div class="panel">
-            <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.Storage Authorization is built around Postgres
-                so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
-                policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.</p>
-                <div class="btn-acc"><p>↗ Expore documentation</p></div>
-        </div>
+            <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
+            <div class="panel">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.Storage Authorization is built around
+                    Postgres
+                    so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
+                    policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.</p>
+                <div class="btn-acc">
+                    <p>↗ Expore documentation</p>
+                </div>
+            </div>
 
-        <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
-        <div class="panel">
-            <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.Storage Authorization is built around Postgres
-                so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
-                policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
-                functions, and even your own metadata to write policies.</p>
-                <div class="btn-acc"><p>↗ Expore documentation</p></div>
+            <button class="accordion">Using Postgres Row Level Security to create Object access rules.</button>
+            <div class="panel">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.Storage Authorization is built around
+                    Postgres
+                    so that you can use any combination of SQL, Postgres functions, and even your own metadata to write
+                    policies.Storage is built around Postgres so that you can use any combination of SQL, Postgres
+                    functions, and even your own metadata to write policies.</p>
+                <div class="btn-acc">
+                    <p>↗ Expore documentation</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- footer -->
- <footer class="container">
-    <div class="left-footer">
-        <div class="logo"><img src="assets/media/logo.png" alt=""></div>
-        <div class="contacts">
-            <a href=""><img src="assets/media/fot-con1.png" alt=""></a>
-            <a href=""><img src="assets/media/fot-con2.png" alt=""></a>
+    <!-- footer -->
+    <footer class="container">
+        <div class="left-footer">
+            <div class="logo"><img src="assets/media/logo.png" alt=""></div>
+            <div class="contacts">
+                <a href=""><img src="assets/media/fot-con1.png" alt=""></a>
+                <a href=""><img src="assets/media/fot-con2.png" alt=""></a>
+            </div>
         </div>
-    </div>
-    <div class="right-footer">
-        <div class="nav">
-            <nav>
-               <div class="top-nav"><a href="">Product</a></div> 
-               <a href="">Database</a>
-               <a href="">Authentication</a>
-               <a href="">Storage</a>
-               <a href="">Functions</a>
-               <a href="">Coming soon</a>
-               <a href="">Pricing</a>
-            </nav>
-            <nav>
-               <div class="top-nav"><a href="">Resources</a></div> 
-               <a href="">Support</a>
-               <a href="">Case Studies</a>
-               <a href="">System Status</a>
-               <a href="">Terms of service</a>
-            </nav>
-            <nav>
-               <div class="top-nav"> <a href="">Developers</a></div>
-               <a href="">Documentation</a>
-               <a href="">API Reference</a>
-               <a href="">Guides</a>
-            </nav>
-            <nav>
-               <div class="top-nav"><a href="">Company</a></div> 
-               <a href="">Blog</a>
-               <a href="">Open Source</a>
-               <a href="">Humans.txt</a>
-               <a href="">Lawyers.txt</a>
-            </nav>
+        <div class="right-footer">
+            <div class="nav">
+                <nav>
+                    <div class="top-nav"><a href="">Product</a></div>
+                    <a href="">Database</a>
+                    <a href="">Authentication</a>
+                    <a href="">Storage</a>
+                    <a href="">Functions</a>
+                    <a href="">Coming soon</a>
+                    <a href="">Pricing</a>
+                </nav>
+                <nav>
+                    <div class="top-nav"><a href="">Resources</a></div>
+                    <a href="">Support</a>
+                    <a href="">Case Studies</a>
+                    <a href="">System Status</a>
+                    <a href="">Terms of service</a>
+                </nav>
+                <nav>
+                    <div class="top-nav"> <a href="">Developers</a></div>
+                    <a href="">Documentation</a>
+                    <a href="">API Reference</a>
+                    <a href="">Guides</a>
+                </nav>
+                <nav>
+                    <div class="top-nav"><a href="">Company</a></div>
+                    <a href="">Blog</a>
+                    <a href="">Open Source</a>
+                    <a href="">Humans.txt</a>
+                    <a href="">Lawyers.txt</a>
+                </nav>
+            </div>
         </div>
+    </footer>
+    <div class="string container"></div>
+    <div class="tema container">
+        <div class="author">
+            <p>© Supabase Inc</p>
+        </div>
+        <div class="img-tema"><img src="assets/media/tema.png" alt=""></div>
     </div>
- </footer>
- <div class="string container"></div>
- <div class="tema container">
-    <div class="author"><p>© Supabase Inc</p></div>
-    <div class="img-tema"><img src="assets/media/tema.png" alt=""></div>
- </div>
 </body>
 
 </html>

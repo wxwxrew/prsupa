@@ -15,7 +15,7 @@ window.onclick = function (event) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function (){
+document.addEventListener("DOMContentLoaded", function () {
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -31,3 +31,8 @@ document.addEventListener("DOMContentLoaded", function (){
         })
     }
 })
+
+
+
+
+
